@@ -2,7 +2,7 @@
 
 import time
 
-from tic_toc import Timer
+from tictoc import Timer
 
 
 with Timer('NAME') as timer:

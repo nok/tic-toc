@@ -4,7 +4,7 @@ import time
 import logging
 
 from tqdm import tqdm
-from tic_toc import Timer
+from tictoc import Timer
 
 
 logging.basicConfig(format='[%(asctime)s:%(msecs)04d] - %(name)s - %(levelname)s - %(message)s',
