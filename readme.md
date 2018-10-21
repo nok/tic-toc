@@ -1,6 +1,7 @@
 # tic-toc
 
-Measure and track the wall and CPU time of defined scopes in Python.
+Measure and track the wall and CPU time of defined scopes in Python. It's suitable for long-running applications which should be monitored.
+
 
 ## Usage
 
