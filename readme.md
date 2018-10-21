@@ -11,7 +11,6 @@ Here you see the implicit variant with the `with` construct:
 ```python
 with Timer('NAME') as timer:
     print('Scope: ' + timer.name)
-    print('...')
     time.sleep(1)
 ```
 
@@ -19,19 +18,17 @@ Here you see the explicit variant without the `with` construct:
 
 ```python
 timer = Timer('NAME')
-timer.tic()  # or timer.start()
+timer.tic()  # or .start()
 print('Scope: ' + timer.name)
-print('...')
 time.sleep(1)
-timer.toc()  # or timer.end()
+timer.toc()  # or .end()
 ```
 
-The output is the same:
+The outputs are similar to each other:
 
 ```python
 # > NAME ...
 # Scope: NAME
-# ...
 # < NAME [WALL: 1.0034] [CPU: 0.0001]
 ```
 
