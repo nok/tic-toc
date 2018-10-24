@@ -1,5 +1,9 @@
 # tic-toc
 
+[![PyPI](https://img.shields.io/pypi/v/tic-toc.svg)](https://pypi.python.org/pypi/tic-toc)
+[![PyPI](https://img.shields.io/pypi/pyversions/tic-toc.svg)](https://pypi.python.org/pypi/tic-toc)
+[![GitHub license](https://img.shields.io/pypi/l/tic-toc.svg)](https://raw.githubusercontent.com/nok/tic-toc/master/license.txt)
+
 Measure and track the wall and CPU time of defined scopes in Python.<br>It's suitable for long-running applications which should be monitored.
 
 
