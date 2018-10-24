@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import annotations
-
 import time
 import random
 
@@ -26,7 +24,7 @@ class Timer(object):
         self.time_cpu: float = 0
         self._output_fn: Callable[[Any], None] = to
 
-    def start(self) -> Timer:
+    def start(self) -> 'Timer':
         msg = self.format_start.format(**self.__dict__)
         self._output_fn(msg)
         self.time_wall = time.perf_counter()
@@ -41,13 +39,13 @@ class Timer(object):
         })
         self._output_fn(msg)
 
-    def tic(self) -> Timer:
+    def tic(self) -> 'Timer':
         return self.start()
 
     def toc(self):
         self.end()
 
-    def __enter__(self) -> Timer:
+    def __enter__(self) -> 'Timer':
         return self.start()
 
     def __exit__(self, type, value, traceback):
