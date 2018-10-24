@@ -7,6 +7,13 @@
 Measure and track the wall and CPU time of defined scopes in Python.<br>It's suitable for long-running applications which should be monitored.
 
 
+## Installation
+
+```bash
+$ pip install tic-toc
+```
+
+
 ## Usage
 
 The following examples demonstrate the most simple usage: 
@@ -14,6 +21,8 @@ The following examples demonstrate the most simple usage:
 Here you see the implicit variant with the `with` construct:
 
 ```python
+from tictoc import Timer
+
 with Timer('NAME') as timer:
     print('Scope: ' + timer.name)
     time.sleep(1)
@@ -22,6 +31,8 @@ with Timer('NAME') as timer:
 Here you see the explicit variant without the `with` construct:
 
 ```python
+from tictoc import Timer
+
 timer = Timer('NAME')
 timer.tic()  # or .start()
 print('Scope: ' + timer.name)
