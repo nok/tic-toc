@@ -21,4 +21,4 @@ with Timer('NAME', to=log.info) as timer:
 
 # [2018-10-21 14:43:58:0262] - asyncio - INFO - > NAME ...
 # NAME: 100%|██████████| 50/50 [00:00<00:00, 16524.72it/s]
-# [2018-10-21 14:43:58:0269] - asyncio - INFO - < NAME [WALL: 0.0068] [CPU: 0.0106]
+# [2018-10-21 14:43:58:0269] - asyncio - INFO - < NAME [WALL: 0.0068s] [CPU: 0.0106s]

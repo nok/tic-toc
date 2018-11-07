@@ -12,7 +12,7 @@ with Timer('NAME') as timer:
 # > NAME ...
 # Scope: NAME
 # ...
-# < NAME [WALL: 1.0034] [CPU: 0.0001]
+# < NAME [WALL: 1.0034s] [CPU: 0.0001s]
 
 timer = Timer('NAME')
 timer.tic()  # or .start()
@@ -24,4 +24,4 @@ timer.toc()  # or .end()
 # > #647 ...
 # Scope: #647
 # ...
-# < #647 [WALL: 1.0021] [CPU: 0.0001]
+# < #647 [WALL: 1.0021s] [CPU: 0.0001s]

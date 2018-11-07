@@ -45,7 +45,7 @@ The outputs are similar to each other:
 ```python
 # > NAME ...
 # Scope: NAME
-# < NAME [WALL: 1.0034] [CPU: 0.0001]
+# < NAME [WALL: 1.0034s] [CPU: 0.0001s]
 ```
 
 You can find more extended examples (e.g. with `logging`, `tqdm` or `pandas`) in the [examples](examples) directory.
@@ -57,13 +57,13 @@ You can find more extended examples (e.g. with `logging`, `tqdm` or `pandas`) in
 class Timer(object):
     def __init__(self, name: str = None,
                  format_start: str = '> {name} ...',
-                 format_end: str = '< {name} [WALL: {time_wall:.4f}] [CPU: {time_cpu:.4f}]',
+                 format_end: str = '< {name} [WALL: {time_wall:.4f}s] [CPU: {time_cpu:.4f}s]',
                  to: Callable[[Any], None] = lambda msg: print(msg)):
 ```
 
 - `name`: str, optional, default: leading hash with four random digits, eg. `#0512`
 - `format_start`: str, optional, default: `'> {name} ...'`
-- `format_end`: str, optional, default: `'< {name} [WALL: {time_wall:.4f}] [CPU: {time_cpu:.4f}]'`
+- `format_end`: str, optional, default: `'< {name} [WALL: {time_wall:.4f}s] [CPU: {time_cpu:.4f}s]'`
 - `to`: `Callable[[Any], None]`, optional, default: `lambda msg: print(msg)`
 
 You can change the visual string formats and the output method.

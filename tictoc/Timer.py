@@ -11,7 +11,7 @@ class Timer(object):
 
     def __init__(self, name: str = None,
                  format_start: str = '> {name} ...',
-                 format_end: str = '< {name} [WALL: {time_wall:.4f}] [CPU: {time_cpu:.4f}]',
+                 format_end: str = '< {name} [WALL: {time_wall:.4f}s] [CPU: {time_cpu:.4f}s]',
                  to: Callable[[Any], None] = lambda msg: print(msg)):
 
         if not name:
