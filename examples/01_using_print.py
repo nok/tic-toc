@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import time
-from tictoc import Timer
+from tic_toc import Timer
 
 
 with Timer('NAME') as timer:
