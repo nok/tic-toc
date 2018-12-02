@@ -9,7 +9,7 @@ setup(
     packages=find_packages(exclude=["tests.*", "tests", "examples", "examples.*"]),
     data_files=["readme.md", "license.txt"],
     include_package_data=True,
-    version='0.1.1',
+    version='0.1.2',
     description='Measure and track the wall and CPU time of defined scopes.',
     author='Darius Morawiec',
     author_email='ping@nok.onl',
