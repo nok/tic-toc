@@ -6,8 +6,9 @@ import logging
 from tic_toc import Timer
 
 
-logging.basicConfig(format='[%(asctime)s:%(msecs)04d] - %(name)s - %(levelname)s - %(message)s',
-                    datefmt='%Y-%m-%d %H:%M:%S', level=logging.INFO)
+log_fmt = '[%(asctime)s:%(msecs)04d] - %(name)s - %(levelname)s - %(message)s'
+datefmt = '%Y-%m-%d %H:%M:%S'
+logging.basicConfig(format=log_fmt, datefmt=datefmt, level=logging.INFO)
 log = logging.getLogger('asyncio')
 
 with Timer('NAME', to=log.info) as timer:
