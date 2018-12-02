@@ -14,7 +14,7 @@ rm -rf ./build/*
 rm -rf ./dist/*
 
 # Read package version:
-VERSION=`python -c "from tictoc import __version__ as ver; print(ver);"`
+VERSION=`python -c "from tic_toc import __version__ as ver; print(ver);"`
 
 # Define the deployment platform:
 target=https://test.pypi.org/legacy/
