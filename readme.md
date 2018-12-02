@@ -16,12 +16,12 @@ $ pip install tic-toc
 
 ## Usage
 
-The following examples demonstrate the most simple usage: 
+The following examples demonstrate the most simple usage:
 
 Here you see the implicit variant with the `with` construct:
 
 ```python
-from tictoc import Timer
+from tic_toc import Timer
 
 with Timer('NAME') as timer:
     print('Scope: ' + timer.name)
@@ -31,7 +31,7 @@ with Timer('NAME') as timer:
 Here you see the explicit variant without the `with` construct:
 
 ```python
-from tictoc import Timer
+from tic_toc import Timer
 
 timer = Timer('NAME')
 timer.tic()  # or .start()
